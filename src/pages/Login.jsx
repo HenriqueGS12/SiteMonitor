@@ -10,10 +10,9 @@ export function Login() {
   const [senhaHash, setSenhaHash] = useState("");
   const navigate = useNavigate();
 
-  let nomeUsuario;
 
+  
   const myUser = data.filter((item) => item.__tabela === "MYUSER");
-
   useEffect(() => {
     const listaUsuarios = myUser.map((usuario) => ({
       id: usuario.ID,
